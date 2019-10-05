@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons start>
+      <button ion-button menuToggle><ion-icon name="menu"></ion-icon></button>
+    </ion-buttons>
+    <ion-title>Movies</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding text-center>
+<ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+  <ion-list>
+    <ion-card  *ngFor="let movie of movies">
+      <ion-card-content>
+        <ion-card-title>
+        {{ movie.Title }}
+        </ion-card-title>
+        <p>
+        ID : {{ movie.Id }} <br>
+        Genere : {{ movie.Genere }} <br>
+        URL: {{ movie.Url}} <br>
+        </p>
+        <h1>Rating {{ movie.rating }}</h1>
+        
+
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
+</ion-content>
+ 

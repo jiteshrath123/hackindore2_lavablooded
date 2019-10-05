@@ -1,0 +1,108 @@
+page-profile {
+}
+// .ios {
+user-profile {
+  ion-content.content {
+    background-color: transparent;
+    .scroll-content {
+      background-color: #fff;
+      //   -webkit-overflow-scrolling: auto !important;
+    }
+  }
+}
+//   }
+
+.user-banner {
+  .user-profile-pic {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    img {
+      max-width: 100%;
+    }
+  }
+  .user-basic-info {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .name {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  .username {
+    color: #777;
+  }
+  .designation {
+    background: #f3f3f3;
+    padding: 10px;
+    /* border: none; */
+    font-size: 16px;
+    font-weight: 600;
+    margin: -15px;
+    margin-top: 10px;
+    border-top: 1px solid #ccc;
+  }
+}
+
+.user-profile {
+  .user-pic {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .user-pic-wrap {
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100px;
+      background: linear-gradient(rgba(0, 0, 0, 0), #000);
+    }
+    .user-heading {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      z-index: 99;
+      color: #fff;
+      padding: 15px;
+      .name {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 5px;
+      }
+    }
+    .close-profile-btn {
+      color: #fff;
+      position: absolute;
+      right: 20px;
+      top: 30px;
+      width: 40px;
+      height: 40px;
+      background-color: transparentize(#000, 0.8);
+      line-height: 40px;
+      border-radius: 50%;
+      .button {
+        display: block;
+        color: #fff;
+        // min-height: 40px;
+        height: 40px;
+        width: 100%;
+        font-size: 16px;
+        margin: 0;
+        ion-icon {
+          padding: 0;
+        }
+      }
+    }
+  }
+}

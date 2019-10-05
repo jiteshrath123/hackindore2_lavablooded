@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons start>
+      <button ion-button menuToggle><ion-icon name="menu"> </ion-icon></button>
+    </ion-buttons>
+    <ion-title>User Profile</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <img height="250px" width="100%" src="../../assets/imgs/profile.png" />
+    <ion-card-content>
+      <ion-card-title> {{ myUser.Name }} </ion-card-title>
+      <h1>Phone: {{ myUser.Phone_NO }}</h1>
+      <h1>Email: {{ myUser.Email }}</h1>
+      <h1>Enrollment: {{ myUser.Enrollment }}</h1>
+      <h1>Payment {{ myUser.Payment_status }}</h1>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

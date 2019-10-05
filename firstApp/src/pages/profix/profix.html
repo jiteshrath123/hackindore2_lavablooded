@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons start>
+      <button ion-button menuToggle><ion-icon name="menu"></ion-icon></button>
+    </ion-buttons>
+    <ion-title>Personalize</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <form #f="ngForm" (ngSubmit)="signUp(f)">
+    <ion-list>
+      <ion-item>
+        <ion-label floating>Movie Id</ion-label>
+        <ion-input type="email" name="email" ngModel required></ion-input>
+      </ion-item>
+    </ion-list>
+    <button ion-button block type="submit">
+      Sign Up
+    </button>
+  </form>
+</ion-content>
